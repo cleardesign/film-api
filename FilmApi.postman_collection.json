@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "a4dba049-389e-480d-8741-6441013dfc64",
+		"name": "FilmApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "91397"
+	},
+	"item": [
+		{
+			"name": "Film",
+			"item": [
+				{
+					"name": "film",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{film_api_url}}/film"
+					},
+					"response": []
+				},
+				{
+					"name": "film",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{film_api_url}}/film"
+					},
+					"response": []
+				},
+				{
+					"name": "film",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"year\": 2000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{film_api_url}}/film/2"
+					},
+					"response": []
+				},
+				{
+					"name": "film",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{film_api_url}}/film/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Actor",
+			"item": [
+				{
+					"name": "actor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{film_api_url}}/actor"
+					},
+					"response": []
+				},
+				{
+					"name": "actor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John\",\n    \"surname\": \"Doe\",\n    \"gender\": \"male\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{film_api_url}}/actor"
+					},
+					"response": []
+				},
+				{
+					"name": "actor",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"year\": 2000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{film_api_url}}/actor/2"
+					},
+					"response": []
+				},
+				{
+					"name": "actor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{film_api_url}}/film/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Genre",
+			"item": [
+				{
+					"name": "genre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{film_api_url}}/genre"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
