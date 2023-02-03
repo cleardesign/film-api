@@ -27,7 +27,7 @@ foreach ($includeDirs as $path) {
 
     // Make sure that Base files will load first.
     usort($files, function ($file1, $file2) {
-        return str_starts_with(basename($file2), 'Base');
+        return str_starts_with(basename($file2), 'Base') ? 1 : -1;
     });
 
     foreach ($files as $file) {
